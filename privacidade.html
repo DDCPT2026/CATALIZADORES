@@ -77,9 +77,14 @@
     color: var(--gray);
   }
   .backlink { display: block; text-align: center; margin-top: 48px; font-size: 12px; letter-spacing: 0.08em; }
+  .backbtn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(245,243,238,0.25); color: var(--fg); font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.12em; padding: 11px 18px; text-decoration: none; transition: border-color .3s, background .3s; }
+  .backbtn:hover { border-color: var(--fg); background: rgba(245,243,238,0.06); color: var(--fg); }
+  .back-top { max-width: 680px; margin: 0 auto; padding: 32px 28px 0; }
+  .back-bottom { text-align: center; padding: 0 28px 96px; }
 </style>
 </head>
 <body>
+<div class="back-top"><a class="backbtn" href="index.html">&larr; VOLTAR À PÁGINA INICIAL</a></div>
 
 <header class="top">
   <p class="eyebrow">DDC SIGNAL</p>
@@ -168,5 +173,7 @@ Sede: Im Defdahl 10 F, 44141 Dortmund, Alemanha &middot; Gerente: Amanda (Shu-We
 </section>
 
 </div>
+<div class="back-bottom"><a class="backbtn" href="index.html">&larr; VOLTAR À PÁGINA INICIAL</a></div>
+<script>try{history.scrollRestoration="manual"}catch(e){} if(!location.hash){window.scrollTo(0,0);}</script>
 </body>
 </html>
